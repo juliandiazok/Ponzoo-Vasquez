@@ -31,7 +31,7 @@ html, body {
 }
 .content { 
   grid-area: content; 
-  align-content: flex-start;   
+  align-content: center;   
 }
 .footer { 
   grid-area: footer;
@@ -69,6 +69,7 @@ html, body {
 
 .ponzoo-logo {
   margin-left: -25px;
+  width: 95%;
 }
 
 .imagenes{
@@ -144,6 +145,10 @@ html, body {
   margin-bottom: 15px;
 }
 
+.vets {
+  padding-top: 5px;
+}
+
 #contact {
   margin-bottom: 25px;
 }
@@ -156,6 +161,21 @@ html, body {
 #follow {
   text-align: center;
   font-weight: bold;
+}
+
+.carousel {
+  max-width: 700px;
+  width: 60%;
+}
+
+.carrusel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.carousel-caption {
+  text-shadow: 2px 2px 4px black;
 }
 
 /*Probando animaciones*/
@@ -268,6 +288,11 @@ html, body {
     max-width: 60%;
     height: auto;
   }
+
+  .vets img{
+    width: 350px;
+    height: 268px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -296,6 +321,11 @@ html, body {
 
   p {
     font-size: 90%;
+  }
+
+  .vets img{
+    width: 250px;
+    height: 191px;
   }
 }
 

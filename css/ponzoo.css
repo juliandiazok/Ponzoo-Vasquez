@@ -93,13 +93,10 @@ h1 {
 }
 
 .ponzoo {
-  text-align: center;
   margin-top: -10px;
   margin-bottom: -10px;
   font-size: 1.8em;
   font-family: titleFont;
-  font-weight: bold;
-  text-align: center;
   color: black;
 }
 
@@ -176,9 +173,7 @@ h1 {
 }
 .description {
   margin: 3em 3em 3em 3em;
-  text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bolder;
 }
 
 .video {
@@ -186,11 +181,9 @@ h1 {
 }
 
 .serv {
-  text-align: center;
   margin-left: 3em;
   margin-right: 3em;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bolder;
 }
 
 #imgscs {
@@ -224,9 +217,9 @@ h1 {
   grid-area: social-media;
 }
 
-#follow {
+#follow, .ponzoo, .description, .serv {
   text-align: center;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .carousel {
@@ -242,6 +235,22 @@ h1 {
 
 .carousel-caption {
   text-shadow: 2px 2px 4px black;
+}
+
+.crl--red1 {
+  text-shadow: 0px 0px 10px black;
+}
+
+.crl--red2 {
+  text-shadow: 0px 0px 10px #9c9c9c;
+}
+
+.crl--red3 {
+  text-shadow: 0px 0px 10px #f48c06;
+}
+
+.crl--red4 {
+  text-shadow: 0px 0px 10px #04643c;
 }
 
 @media (max-width: 650px) {

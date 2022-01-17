@@ -96,13 +96,11 @@ h1 {
 }
 
 .ponzoo {
-  text-align: center;
+  @extend #follow;
   margin-top: -10px;
   margin-bottom: -10px;
   font-size: 1.80em;
   font-family: titleFont;
-  font-weight: bold;
-  text-align: center;
   color: black;
 }
 
@@ -150,22 +148,21 @@ h1 {
 }
 
 .description {
+  @extend #follow;
   margin: 3em 3em 3em 3em;
-  text-align: center;
   font-family:$fuenteContenido ;
-  font-weight:bolder;
 }
+
 
 .video {
   text-align: center;
 }
 
 .serv {
-  text-align: center;
+  @extend #follow;
   margin-left: 3em;
   margin-right: 3em;
   font-family:$fuenteContenido ;
-  font-weight:bolder;
 }
 
 #imgscs {
@@ -199,7 +196,7 @@ h1 {
 
 #follow {
   text-align: center;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .carousel {
@@ -217,12 +214,29 @@ h1 {
   text-shadow: 2px 2px 4px black;
 }
 
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+$redes: (
+    red1: black,
+    red2: #9c9c9c,
+    red3: $colorPagina,
+    red4 : #04643c,
+    );
+
+@each $red, $color in $redes {
+    .crl--#{$red} {
+        text-shadow: 0px 0px 10px $color ;
+    }
+}
+
 
 
 @media (max-width: 650px) {
   .video iframe {
-    width: 500px; 
-    height: 280px;
+    @include sizes(500px, 280px);
   }
 
   .map  {
@@ -263,8 +277,7 @@ h1 {
   }
 
   .video iframe {
-    width: 365px; 
-    height: 235px;
+    @include sizes(365px, 235px);
   }
 
   p {
@@ -294,8 +307,7 @@ h1 {
   }
 
   .vets img{
-    width: 350px;
-    height: 268px;
+    @include sizes(350px, 268px);
   }
 }
 
@@ -319,8 +331,7 @@ h1 {
   }
 
   .video iframe {
-    width: 260px; 
-    height: 190px;
+    @include sizes(260px, 190px);
   }
 
   p {
@@ -328,8 +339,7 @@ h1 {
   }
 
   .vets img{
-    width: 250px;
-    height: 191px;
+    @include sizes(250px, 191px);
   }
   
 }

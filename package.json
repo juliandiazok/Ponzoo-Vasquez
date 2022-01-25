@@ -1,0 +1,10 @@
+{
+	"name": "Ponzoo - Tienda de Mascotas",
+	"version": "1.0.0",
+	"description": "Este es un proyecto para el Curso de Coderhouse, consiste en una página web llamada Ponzoo con la temática de una tienda de mascotas",
+	"dependencies": {
+		"node-sass": "^7.0.1",
+		"nodemon": "^2.0.15",
+		"bootstrap": "^4.0.0"
+	}
+}

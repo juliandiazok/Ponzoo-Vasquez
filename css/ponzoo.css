@@ -24,7 +24,7 @@ html, body {
 .header {
   width: 100%;
   grid-area: header;
-  background-image: url("../Images/golden.jpg");
+  background-image: url("../images/golden.jpg");
   background-position: center top;
   background-repeat: no-repeat;
 }

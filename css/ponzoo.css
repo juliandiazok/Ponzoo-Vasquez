@@ -276,7 +276,7 @@ h1 {
 }
 @media (max-width: 525px) {
   .header {
-    background-image: url("../Images/header-mini.png");
+    background-image: url("../images/header-mini.png");
     background-position: center top;
     background-repeat: no-repeat;
   }

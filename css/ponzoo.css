@@ -1,6 +1,6 @@
 @font-face {
   font-family: titleFont;
-  src: url(../fonts/Animal\ Paw.ttf);
+  src: url(../fonts/Animal.ttf);
 }
 html, body {
   width: 100vw;
@@ -107,6 +107,10 @@ h1 {
   list-style: none;
   justify-content: center;
   gap: 20px;
+}
+
+.parrafo {
+  margin-top: 20px;
 }
 
 .foot {
@@ -235,6 +239,33 @@ h1 {
 
 .carousel-caption {
   text-shadow: 2px 2px 4px black;
+}
+
+#mensaje {
+  padding: 5px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+input[type=text], input[type=number] {
+  padding: 5px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+input[type=text]:focus {
+  border-color: #333;
+}
+
+input[type=submit], input[type=reset] {
+  padding: 5px 15px;
+  background: #f48c06;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .crl--red1 {
